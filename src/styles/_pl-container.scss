@@ -1,0 +1,96 @@
+body {
+    background-color: $body-bg-color;
+}
+
+.pl-container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.pl-header {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+
+    &--feed {
+        justify-content: space-between;
+
+        &__user {
+            display: flex;
+
+            button:first-child {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 2px;
+                width: 34px;
+                margin-right: 4px;
+
+                span.icon-user {
+                    font-size: 25px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.pl-input {
+    &--files {
+        width: 0;
+        height: 0;
+    }
+
+    &--main {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid $font-color-light-grey;
+    }
+}
+
+.btn {
+    &--primary {
+        position: relative;
+        color: #FFF;
+        outline: none;
+        text-decoration: none;
+        background-color: $font-color-blue;
+        border-bottom: 3px solid $font-color-light-blue;
+        transition: all 0.1s;
+        -webkit-transition: all 0.1s;
+
+        &:active {
+            outline: none !important;
+            color: #fff;
+            transform: translate(0px, 2px);
+            -webkit-transform: translate(0px, 2px);
+            border-bottom: 3px solid;
+        }
+
+        &:hover {
+            background-color: $font-color-blue-bold;
+            color: #fff;
+        }
+    }
+}
+
+.pl-icon {
+    width: 30px;
+    &--plus {
+        width: 20px;
+    }
+
+    &--more {
+        width: 20px;
+    }
+}
+
+.pl-loading {
+    background:url(../assets/img/loading.gif) no-repeat center center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
